@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodBoard Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .board {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .color-palette {
+      height: 50px;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 20px 0;
+    }
+
+    .playlist {
+      width: 100%;
+      height: 80px;
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    .mood-image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>What's Your Mood Today?</h1>
+    <select id="moodSelector">
+      <option value="happy">😊 Happy</option>
+      <option value="sad">😢 Sad</option>
+      <option value="creative">🎨 Creative</option>
+      <option value="chill">😌 Chill</option>
+    </select>
+
+    <div class="board">
+      <div class="color-palette"></div>
+      <blockquote class="quote">"Your vibe attracts your tribe."</blockquote>
+      <iframe class="playlist" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3rxVfibe1L0" allow="encrypted-media"></iframe>
+      <img class="mood-image" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Mood Image"/>
+      <textarea placeholder="Write your thoughts here..."></textarea>
+    </div>
+  </div>
+</body>
+</html>
