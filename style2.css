@@ -31,7 +31,7 @@ select {
 }
 
 .quote {
-  font-style: italic;
+  font-style2: italic;
   margin: 20px 0;
 }
 
@@ -56,4 +56,5 @@ textarea {
   font-size: 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
+
 }
